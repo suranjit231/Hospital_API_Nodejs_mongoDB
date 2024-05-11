@@ -21,38 +21,39 @@ This project aims to provide an API for managing the interaction between doctors
 3. Set up MongoDB database and configure connection in `config.js`.
 4. Start the server using `npm start`.
 
-### Folder-Structure
-HOSPITAL-API/
-│
-├── config/
-│   └── mongodbConnect.js
-│
-├── src/
-│   ├── core/
-│   │   ├── doctor/
-│   │   │   ├── doctor.controller.js
-│   │   │   ├── doctor.routes.js
-│   │   │   ├── doctor.repository.js
-│   │   │   └── doctorSchema.js
-│   │   │
-│   │   ├── patient/
-│   │   │   ├── patient.controller.js
-│   │   │   ├── patient.routes.js
-│   │   │   ├── patient.repository.js
-│   │   │   └── patientSchema.js
-│   │   │
-│   │   └── report/
-│   │       ├── report.controller.js
-│   │       ├── report.routes.js
-│   │       ├── report.repository.js
-│   │       └── reportSchema.js
-│   │
-│   └── middleware/
-│       └── jwtAuth.middleware.js
-│
-├── server.js
-├── package.json
-├── package-lock.json
-├── node_modules/
-├── .env
-└── README.md
+HOSPITAL-API
+|           |               
+|           |               |
+|           |--->config---> |-->mongodbConnect.js
+|           |               |
+|           |
+|--->src--->|               |            |-->doctor.controller.js   
+|           |               |-->doctor-->|-->doctor.routes.js
+|           |               |            |-->doctor.repository.js  
+|           |--->core-----> |            |-->doctorSchema.js  
+|           |               |
+|           |               |            |-->patent.controller.js
+|           |               |-->patent-->|-->patent.routes.js
+|           |               |            |-->patent.repository.js
+|           |               |            |-->patentSchema.js
+|           |               |
+|           |               |            |-->report.controller.js
+|           |               |-->report-->|-->report.routes.js
+|           |               |            |-->report.repository.js
+|           |               |            |-->reportSchema.js
+|           |               |            
+|           |               |                                                                                          
+|           |               |
+|           |
+|           |-->middleware-->|-->jwtAuth.middleware.js
+|           |
+|           |
+|
+|
+|-->server.js
+|-->package.json
+|-->package.lock.json
+|-->node_module
+|-->.env
+|-->README.md
+|
