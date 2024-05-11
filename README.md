@@ -21,7 +21,8 @@ This project aims to provide an API for managing the interaction between doctors
 3. Set up MongoDB database and configure connection in `config.js`.
 4. Start the server using `npm start`.
 
-HOSPITAL-API
+##HOSPITAL-API
+```
 |           |               
 |           |               |
 |           |--->config---> |-->mongodbConnect.js
@@ -57,3 +58,4 @@ HOSPITAL-API
 |-->.env
 |-->README.md
 |
+```
