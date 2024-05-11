@@ -16,7 +16,7 @@ This project aims to provide an API for managing the interaction between doctors
 - **JWT Authentication**: Secure authentication mechanism for user login.
 
 ## Setup
-1. Clone the repository.
+1. get clone https://github.com/suranjit231/Hospital_API_Nodejs_mongoDB.git.
 2. Install dependencies using `npm install`.
 3. Set up MongoDB database and configure connection in `config.js`.
 4. Start the server using `npm start`.
